@@ -1,0 +1,381 @@
+body{
+      font-family: "Montserrat", sans-serif;
+      margin:0;
+      background-color:black;
+      color: white;
+      overflow: hidden;
+}
+.main{
+    display:flex;
+    height: 100vh;
+   margin: 0.5rem;
+}
+
+.sidebar{
+   background-color:black;
+  border-radius: 1rem; 
+   
+ /* 1rem=16px hota hai */
+}
+
+.main-content{
+   background-color: #121212;
+   /* ( jitna bhi sidebar ko space mila then bacha hua space hmko dedo) */
+    flex: 1; 
+    border-radius: 1rem;  
+    overflow: auto;
+    margin: 10px;
+    padding: 0 1.5rem 0 1.5rem;
+   
+   
+ 
+}
+
+.music-player{
+   background-color: black;
+   position:fixed;
+   bottom: 0px;
+   width: 100%;
+   height: 92px;
+}
+a{
+    text-decoration:none;
+    color: white;
+
+}
+/* for home and search navigation in sidebar */
+.nav{
+    background-color: #121212;
+      border-radius: 1rem; 
+      display: flex; 
+      flex-direction: column;
+      height: 100px;
+      padding: 0.5rem 0.75rem;
+      justify-content: center;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity:1;
+    padding: 8px 8px ;
+}
+/* search button hover krne pr but home fixed opacity hai usko code me krenge */
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+font-size: 1rem;
+padding-left: 10px;
+
+}
+
+/* library option styling */
+.library{
+    background-color: #121212;
+    border-radius: 1rem; 
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem ;
+}
+.options{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+ }
+ .icons{
+    font-size: 1.25rem;
+    display: flex;
+ }
+ .icons i{
+    margin-right: 0.3rem;
+    opacity: 0.5;
+ }
+ .icons i:hover{
+    opacity: 1;
+    margin-right: 0.3rem;
+ }
+
+ /* box styling */
+.box{
+    background-color: #232323;
+    height: 8rem;
+    width: 250px;
+    border-radius: 0.75rem;
+   margin: 0.75rem 0 1.75rem 0;
+   padding: 0.75rem 1rem;
+  
+} 
+
+.boxp1{
+    font-size:1rem;
+    font-weight: 700px;
+    font-weight: 700;
+
+}
+
+.boxp2{
+    font-size: 16px;
+    opacity: 0.9;
+   
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+   font-size: 16px;
+   height: 32px;
+   width: 150px;
+}
+.dark-badge{
+background-color: black;
+color: white;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons {
+  margin-left: 0.75rem;
+ font-size: large;
+}
+
+.sticky-nav-options{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .nav-item {
+ margin-right: 1rem;
+ }
+ /* media query */
+ @media ( max-width:1000px){
+    .hide{
+        display: none;
+    }
+ }
+ /* card styling */
+ .card{
+    background-color: #232323;
+    width:150px ;
+     border-radius:0.5rem ;
+     padding: 1rem;
+     margin-left: 1.5rem;
+     margin-top: 1rem;
+ }
+ .cards-container{
+    display: flex;
+   flex-wrap: wrap;
+ }
+ .card-img{
+    width: 100%;
+    border-radius:0.5rem ;
+ }
+
+ .card-title{
+    font-weight: 700;
+ }
+ .card-info{
+    font-size: 0.75rem;
+    opacity: 0.7;
+ }
+
+ /* footer styling */
+ .footer{
+    height: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: -10px;
+ }
+ .line{
+    width: 90%;
+    height: 50%;
+    border-top:1px solid white;
+    opacity: 0.3;
+ }
+
+ /* music player */
+ .music-player   {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  
+ }
+/* apne se */
+
+.album{
+width: 25%;
+display: flex;
+border-radius: 6px;
+align-items: center;
+padding: 15px;
+
+ }
+.song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px;
+}
+
+.song-info h4 {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
+
+.song-info p {
+  font-size: 12px;
+  color: #b3b3b3;
+  margin: 3px 0 0;
+}
+
+.icons i {
+  display: flex;
+ justify-content: center;
+  margin-left: 10px;
+  opacity: 0.8;
+ 
+}
+
+ 
+/* apne se */
+.controls {
+  width: 25%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control-icons {
+  display: flex;
+  align-items: center;
+  gap: 9px; /* pehle 10px tha, ab kam kiya */
+  padding-left: 165px;
+}
+
+.control-icons i{
+ opacity: 0.6;
+}
+.control-icons i:hover{
+ opacity: 1;
+}
+.control-img{
+   opacity: 0.6;
+}
+.control-img:hover{
+   opacitY:1
+}
+
+.control-img {
+  height: 25px;
+}
+
+.volume-range {
+  width: 90px; /* compact width */
+  cursor: pointer;
+  accent-color: white;
+  margin-left: -10px; 
+  padding-left: 10px;
+  opacity: 1;
+  appearance: none;
+  background-color: transparent;
+}
+.volume-range::-webkit-slider-runnable-track{
+   background-color: gray;
+  border-radius: 100px;
+  height: 0.25rem;
+  opacity: 1;
+ 
+}
+
+.volume-range::-webkit-slider-thumb{
+     appearance: none;
+   height: 12px;
+   width: 12px;
+   border-radius: 50%;
+   margin-top: -3px;
+   opacity: 0;
+}
+.volume-range::-webkit-slider-thumb:hover{
+   opacity: 1;
+   background-color:  #1bd760 ;    
+}
+
+
+
+
+
+
+/* by lecture */
+.player {
+    width: 50%;
+ }
+ 
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.player-control-icon {
+   height: 16px;
+   margin-right: 1.75rem;
+   opacity: 0.7;
+   
+}
+.player-control-icon:hover{
+   opacity: 1;
+}
+
+/* playback bar style */
+.playback-bar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.progress-bar{
+   width: 70%;
+   appearance: none;
+   background-color: transparent;
+   cursor: pointer;
+ 
+}
+.progress-bar::-webkit-slider-runnable-track {
+background-color: #ddd;
+  border-radius: 100px;
+  height: 0.25rem;
+}
+.progress-bar::-webkit-slider-thumb{
+   appearance: none;
+   height: 16px;
+   width: 16px;
+   background-color:#1bd760;
+   border-radius: 50%;
+   margin-top: -6px;
+   
+}
+
+
+
+
+
