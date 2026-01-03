@@ -2,7 +2,7 @@
 This is a frontend clone of the Spotify web interface created only for learning and practice.
 
 # Live Demo
-
+ https://mdsufiyankhan8986-eng.github.io/Spotify-UI-clone/
  
 # About
 - This project is a UI clone
