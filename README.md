@@ -1,4 +1,4 @@
-# Spotify Clone 
+# Spotify UI Clone 
 This is a frontend clone of the Spotify web interface created only for learning and practice.
 
 # Live Demo
